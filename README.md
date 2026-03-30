@@ -1,4 +1,4 @@
-# RocketLog API
+# Delivery API
 
 API REST para gestão de entregas, com autenticação JWT, autorização por perfil de usuário e persistência em PostgreSQL com Prisma.
 
