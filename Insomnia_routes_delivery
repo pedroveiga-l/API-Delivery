@@ -1,0 +1,585 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v12.4.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2026-04-01T02:56:50.523Z",
+				"time": 44.396,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/delivery-logs/5535fea9-7ccd-4977-8296-ef0c53ecf011/show",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2FsZSIsImlhdCI6MTc3NDgzODU4MywiZXhwIjoxNzc0OTI0OTgzLCJzdWIiOiI2ZGZlYzI0OC03YTliLTQ3ODAtODFiMi02ZjU3YjgxZDg5ZjEifQ.KmHwNNzAFRmt54xn196_j76awK44at6CYS-2sugfaIo"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "648"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"288-GGRuJ936PzkbJq4Gh0QFXU1zo2k\""
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 30 Mar 2026 02:43:03 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 648,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":\"5535fea9-7ccd-4977-8296-ef0c53ecf011\",\"userId\":\"9db50113-ae68-45d5-8f5c-9e12b26151d0\",\"description\":\"Teclado\",\"status\":\"shipped\",\"createdAt\":\"2026-03-28T23:21:11.631Z\",\"updatedAt\":\"2026-03-30T02:31:05.600Z\",\"logs\":[{\"id\":\"11b843a1-8dd9-4fc5-b8bf-c85ba49739bc\",\"description\":\"chegou no centro\",\"deliveryId\":\"5535fea9-7ccd-4977-8296-ef0c53ecf011\",\"createdAt\":\"2026-03-30T02:31:08.044Z\",\"updatedAt\":\"2026-03-30T02:31:08.044Z\"},{\"id\":\"643ed86e-87e2-4467-b963-0fa5f5dcacbc\",\"description\":\"em trânsito para Betim\",\"deliveryId\":\"5535fea9-7ccd-4977-8296-ef0c53ecf011\",\"createdAt\":\"2026-03-30T02:32:05.152Z\",\"updatedAt\":\"2026-03-30T02:32:05.152Z\"}]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 44.396,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Index"
+			},
+			{
+				"startedDateTime": "2026-04-01T02:56:50.523Z",
+				"time": 32.438,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3333/delivery-logs",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2FsZSIsImlhdCI6MTc3NDgzODU4MywiZXhwIjoxNzc0OTI0OTgzLCJzdWIiOiI2ZGZlYzI0OC03YTliLTQ3ODAtODFiMi02ZjU3YjgxZDg5ZjEifQ.KmHwNNzAFRmt54xn196_j76awK44at6CYS-2sugfaIo"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"delivery_id\": \"5535fea9-7ccd-4977-8296-ef0c53ecf011\",\n\t\"description\": \"em trânsito para Betim\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 30 Mar 2026 02:32:05 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json; charset=utf-8",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 32.438,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create"
+			},
+			{
+				"startedDateTime": "2026-04-01T02:56:50.523Z",
+				"time": 62.974000000000004,
+				"request": {
+					"method": "PATCH",
+					"url": "http://localhost:3333/deliveries/5535fea9-7ccd-4977-8296-ef0c53ecf011/status",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2FsZSIsImlhdCI6MTc3NDgzODU4MywiZXhwIjoxNzc0OTI0OTgzLCJzdWIiOiI2ZGZlYzI0OC03YTliLTQ3ODAtODFiMi02ZjU3YjgxZDg5ZjEifQ.KmHwNNzAFRmt54xn196_j76awK44at6CYS-2sugfaIo"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"status\": \"shipped\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 29 Mar 2026 00:05:32 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json; charset=utf-8",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 62.974000000000004,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Status Update"
+			},
+			{
+				"startedDateTime": "2026-04-01T02:56:50.523Z",
+				"time": 72.13799999999999,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/deliveries",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2FsZSIsImlhdCI6MTc3NDgzODU4MywiZXhwIjoxNzc0OTI0OTgzLCJzdWIiOiI2ZGZlYzI0OC03YTliLTQ3ODAtODFiMi02ZjU3YjgxZDg5ZjEifQ.KmHwNNzAFRmt54xn196_j76awK44at6CYS-2sugfaIo"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "273"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"111-pWAdBVn3cDy+8EpXDl8hoZgdSN4\""
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 30 Mar 2026 02:30:32 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 273,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":\"5535fea9-7ccd-4977-8296-ef0c53ecf011\",\"userId\":\"9db50113-ae68-45d5-8f5c-9e12b26151d0\",\"description\":\"Teclado\",\"status\":\"processing\",\"createdAt\":\"2026-03-28T23:21:11.631Z\",\"updatedAt\":\"2026-03-30T02:29:31.772Z\",\"user\":{\"name\":\"Maria\",\"email\":\"Maria3011@gmail.com\"}}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 72.13799999999999,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Index"
+			},
+			{
+				"startedDateTime": "2026-04-01T02:56:50.523Z",
+				"time": 56.453,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3333/deliveries",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2FsZSIsImlhdCI6MTc3NDgzODU4MywiZXhwIjoxNzc0OTI0OTgzLCJzdWIiOiI2ZGZlYzI0OC03YTliLTQ3ODAtODFiMi02ZjU3YjgxZDg5ZjEifQ.KmHwNNzAFRmt54xn196_j76awK44at6CYS-2sugfaIo"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "\t{\n\t\t\"user_id\": \"9db50113-ae68-45d5-8f5c-9e12b26151d0\",\n\t\t\"description\": \"Teclado\"\n\t}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 28 Mar 2026 23:21:11 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json; charset=utf-8",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 56.453,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create"
+			},
+			{
+				"startedDateTime": "2026-04-01T02:56:50.523Z",
+				"time": 298.822,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3333/sessions",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"email\": \"pedroveiga1902@gmail.com\",\n\t\"password\": \"19022007\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "420"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"1a4-AyqRFnZfImCurgVrTowLOSapUEM\""
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 30 Mar 2026 02:43:03 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 420,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2FsZSIsImlhdCI6MTc3NDgzODU4MywiZXhwIjoxNzc0OTI0OTgzLCJzdWIiOiI2ZGZlYzI0OC03YTliLTQ3ODAtODFiMi02ZjU3YjgxZDg5ZjEifQ.KmHwNNzAFRmt54xn196_j76awK44at6CYS-2sugfaIo\",\"user\":{\"id\":\"6dfec248-7a9b-4780-81b2-6f57b81d89f1\",\"name\":\"Pedro Paulo\",\"email\":\"pedroveiga1902@gmail.com\",\"role\":\"sale\",\"createdAt\":\"2026-03-27T17:53:50.239Z\",\"updatedAt\":\"2026-03-28T23:20:56.816Z\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 298.822,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create"
+			},
+			{
+				"startedDateTime": "2026-04-01T02:56:50.523Z",
+				"time": 104.774,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3333/users",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/12.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"name\": \"Ana\",\n\t\"email\": \"ana@gmail.com\",\n\t\"password\": \"123456\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "178"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"b2-cvPoWO2mDIm2FFbpBSsEHDFjP3I\""
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 30 Mar 2026 02:41:09 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 178,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":\"c59a061d-540f-4739-820a-d546f4674f19\",\"name\":\"Ana\",\"email\":\"ana@gmail.com\",\"role\":\"customer\",\"createdAt\":\"2026-03-30T02:41:09.689Z\",\"updatedAt\":\"2026-03-30T02:41:09.689Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 104.774,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create"
+			}
+		]
+	}
+}
